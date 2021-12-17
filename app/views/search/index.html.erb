@@ -1,0 +1,6 @@
+<% @characters.each do |character| %>
+  <%= character.name %>
+  <%= image_tag character.photo if !character.photo.nil? %>
+  <%= character.allies %>
+  <%= character.enemies %>
+<% end %>
